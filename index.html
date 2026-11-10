@@ -20,7 +20,7 @@ function grade(){let a=items.map((_,i)=>document.querySelector(`input[name=q${i}
 function resetQuiz(){items.forEach((_,i)=>document.querySelectorAll(`input[name=q${i}]`).forEach(x=>x.checked=false));document.getElementById('results').innerHTML=''}
 </script><script>
 /* SETUP: After deploying Apps Script, paste the Google Web App URL ending /exec here. */
-const SHEET_WEB_APP_URL = '';
+const SHEET_WEB_APP_URL = 'https://script.google.com/a/macros/unemi.edu.ec/s/AKfycbyQklycminX1_xniwj3eWTSFVa-te-cx3hcebvhejvyKx7wc709X_BdTMT1vB_KS0rHFw/exec';
 const previousGrade = window.grade;
 window.grade = function() {
  const name = (document.getElementById('student').value || '').trim();
