@@ -27,7 +27,7 @@ window.grade = function() {
  const email = (document.getElementById('studentEmail').value || '').trim().toLowerCase();
  const consent = document.getElementById('studentConsent').checked;
  const status = document.getElementById('submissionStatus');
- if (name.length < 5 || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) { status.textContent='Please enter your full name and a valid institutional email address.'; return; }
+ if (name.length < 5 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { status.textContent='Please enter your full name and a valid institutional email address.'; return; }
  if (!consent) { status.textContent='Please confirm the class evidence notice before submitting.'; return; }
  if (items.some((_,i)=>!document.querySelector('input[name=q'+i+']:checked'))) { previousGrade(); return; }
  previousGrade();
