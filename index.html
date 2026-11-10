@@ -5,7 +5,7 @@
 <section id="intro" class="screen active"><span class="tag">60-MINUTE LIVE CLASS</span><h2>Language shapes perception</h2><p class="sub">Objective: Examine how media language, framing, representation and stereotypes may influence our interpretation of events and people.</p><div class="cards"><div class="card"><strong>00–25 MIN · EXPLAIN</strong><p>Warm-up, language / discourse / media, framing, bias and omission.</p></div><div class="card"><strong>25–40 MIN · APPLY</strong><p>Mission 1: Compare two contrasting fictional headlines.</p></div><div class="card"><strong>40–55 MIN · APPLY</strong><p>Representation, social effects and Mission 2.</p></div><div class="card"><strong>55–60 MIN · CHECK</strong><p>Complete three scenario-based questions.</p></div></div><div class="guidance"><b>Teaching method:</b> Explain → Apply → Reflect. All examples here are fictional teaching prompts, not verified news reports.</div><button class="btn" onclick="showTab('one')">Start mission 1 →</button></section>
 <section id="one" class="screen"><span class="tag">MISSION 1 · THE HEADLINE BATTLE · 25–40 MIN</span><h2>Same imagined event. Different frames.</h2><p class="sub">Read the headlines. Both are hypothetical and neither proves what occurred.</p><div class="cards"><div class="card"><strong>HEADLINE A</strong><p>Angry protesters disrupt city streets.</p></div><div class="card"><strong>HEADLINE B</strong><p>Citizens demand action during a peaceful demonstration.</p></div></div><div class="question"><p>1. Which headline uses words that frame demonstrators more negatively?</p><label class="choice"><input type="radio" name="m1" value="A">A: Angry protesters disrupt city streets.</label><label class="choice"><input type="radio" name="m1" value="B">B: Citizens demand action during a peaceful demonstration.</label><button class="btn" onclick="checkMission1()">Check & explain</button><div id="m1fb" class="feedback"></div></div><p><b>Explain aloud or in the chat:</b> Which two words influence the reader's perceptions? What important information is missing from both headlines?</p><textarea class="response" placeholder="e.g., The words 'angry' and 'disrupt' suggest... We still need to verify..."></textarea><div class="guidance"><b>Reflection prompt:</b> Does biased framing necessarily mean that the factual event described is false? Explain the difference between perspective and verified evidence.</div><button class="btn secondary" onclick="showTab('two')">Next mission →</button></section>
 <section id="two" class="screen"><span class="tag">MISSION 2 · REPRESENTATION LAB · 45–55 MIN</span><h2>Challenge a stereotype</h2><p class="sub">Choose one statement, identify the generalization, and rewrite it without presenting unsupported assumptions as facts.</p><div class="cards"><div class="card"><strong>ADVERTISING</strong><p>“The caring mother chooses the best cleaning products.”</p></div><div class="card"><strong>NEWS-STYLE CLAIM</strong><p>“Young people are addicted to their phones.”</p></div></div><div class="question"><p>2. What is the strongest critical observation?</p><label class="choice"><input type="radio" name="m2" value="A">Both statements report verified scientific findings.</label><label class="choice"><input type="radio" name="m2" value="B">They may reinforce unsupported expectations or generalizations about social groups.</label><label class="choice"><input type="radio" name="m2" value="C">Neither statement can affect an audience.</label><button class="btn" onclick="checkMission2()">Check & explain</button><div id="m2fb" class="feedback"></div></div><p><b>Rewrite one message:</b></p><textarea class="response" placeholder="Example: Some families consider ..."></textarea><p><b>Oral justification (30–45 seconds):</b> Identify the group represented, explain the assumption and defend your revised wording.</p><button class="btn secondary" onclick="showTab('exit')">Exit ticket →</button></section>
-<section id="exit" class="screen"><span class="tag">INDIVIDUAL EXIT TICKET · 55–60 MIN</span><h2>Media Verdict</h2><p class="sub">Choose one answer for each item. Score: 1 point per correct response (3 total). Feedback appears after submission.</p><div class="guidance" id="registryNotice"><b>Class evidence:</b> Your full name, institutional email, answers and score can be recorded in a private teacher spreadsheet once the teacher enables the connection. Do not enter passwords.</div><div class="cards" style="margin:12px 0"><label>Full name <input id="student" type="text" required maxlength="160" autocomplete="name" placeholder="First and last names" style="display:block;width:100%;padding:12px;margin-top:7px;border:1px solid #c5d3de;border-radius:6px"></label><label>Institutional email <input id="studentEmail" type="email" required maxlength="180" autocomplete="email" placeholder="name@unemi.edu.ec" style="display:block;width:100%;padding:12px;margin-top:7px;border:1px solid #c5d3de;border-radius:6px"></label></div><label class="small" style="display:block;margin:10px 0"><input id="studentConsent" type="checkbox"> I understand that, when enabled, my answers and score will be sent to the teacher's private Google Sheet for class participation tracking.</label><div id="quiz"></div><button class="btn" id="submit" onclick="grade()">Submit 3 answers</button><button class="btn secondary" onclick="resetQuiz()">Try again</button><div id="submissionStatus" class="guidance" role="status" aria-live="polite">Complete all 3 questions, enter your full name and email above, and tick the consent checkbox before submitting.</div><div id="results" aria-live="polite"></div></section></div><p class="small">Designed for a 60-minute UNEMI live class. Google Sheets submission is configured. Check the submission message and ask your teacher to verify the entry in the private spreadsheet.</p></div><script>
+<section id="exit" class="screen"><span class="tag">INDIVIDUAL EXIT TICKET · 55–60 MIN</span><h2>Media Verdict</h2><p class="sub">Choose one answer for each item. Score: 1 point per correct response (3 total). Feedback appears after submission.</p><div class="guidance" id="registryNotice"><b>Class evidence:</b> Your full name, institutional email, answers and score can be recorded in a private teacher spreadsheet once the teacher enables the connection. Do not enter passwords.</div><div class="cards" style="margin:12px 0"><label>Full name <input id="student" type="text" required maxlength="160" autocomplete="name" placeholder="First and last names" style="display:block;width:100%;padding:12px;margin-top:7px;border:1px solid #c5d3de;border-radius:6px"></label><label>Institutional email <input id="studentEmail" type="email" required maxlength="180" autocomplete="email" placeholder="name@unemi.edu.ec" style="display:block;width:100%;padding:12px;margin-top:7px;border:1px solid #c5d3de;border-radius:6px"></label></div><label class="small" style="display:block;margin:10px 0"><input id="studentConsent" type="checkbox"> I understand that, when enabled, my answers and score will be sent to the teacher's private Google Sheet for class participation tracking.</label><div id="quiz"></div><button class="btn" id="submit" onclick="grade()">Submit 3 answers</button><button class="btn secondary" onclick="resetQuiz()">Try again</button><div id="submissionStatus" class="guidance" role="status" aria-live="polite">Complete all 3 questions, enter your full name and email above, and tick the consent checkbox before submitting.</div><div id="results" aria-live="polite"></div></section></div><p class="small">Designed for a 60-minute UNEMI live class. When you submit, a separate tab displays the Apps Script result. Only OK means accepted by the receiver; the teacher should verify that a new row appears in the private spreadsheet.</p></div><script>
 const items=[
 {q:'A report calls a peaceful gathering “a threatening mob.” What should a discourse analyst examine?',o:['The evaluative words and the frame they create','The size of the video file','Only the report’s date'],a:0,why:'“Threatening mob” is evaluative language that can frame people negatively. The analyst must also verify the factual description.'},
 {q:'An advertisement repeatedly depicts mothers as the only people responsible for housework. What might this reinforce?',o:['A neutral description of all households','A gender stereotype about domestic roles','Proof that advertising has no social influence'],a:1,why:'The repeated portrayal may reinforce a restrictive expectation about who should perform domestic labor.'},
@@ -19,33 +19,81 @@ function checkMission2(){let v=document.querySelector('input[name=m2]:checked');
 function grade(){let a=items.map((_,i)=>document.querySelector(`input[name=q${i}]:checked`));if(a.some(x=>!x)){document.getElementById('results').innerHTML='<div class="feedback bad" style="display:block">Please answer all three questions before submitting.</div>';return}let score=a.reduce((s,x,i)=>s+(Number(x.value)===items[i].a),0);let name=document.getElementById('student').value.trim();let html=`<div class="question"><div class="score">${score} / 3</div><b>${name?name.replace(/[<>&]/g,''): 'Student'}</b> · ${score===3?'Excellent application!':'Review the explanations and try again.'}</div>`;items.forEach((it,i)=>{html+=`<div class="feedback ${Number(a[i].value)===it.a?'':'bad'}" style="display:block"><b>Question ${i+1}:</b> ${Number(a[i].value)===it.a?'Correct.':'Incorrect.'} ${it.why}</div>`});html+='<button class="btn secondary" onclick="window.print()">Print / save as PDF</button>';document.getElementById('results').innerHTML=html}
 function resetQuiz(){items.forEach((_,i)=>document.querySelectorAll(`input[name=q${i}]`).forEach(x=>x.checked=false));document.getElementById('results').innerHTML=''}
 </script><script>
-/* SETUP: After deploying Apps Script, paste the Google Web App URL ending /exec here. */
+/*
+ * Save to Google Sheets through a standard HTML form POST.
+ * Apps Script returns an observable response in a new tab (OK, INVALID, ERROR).
+ * No unsupported CORS-success claims.
+ */
 const SHEET_WEB_APP_URL = 'https://script.google.com/a/macros/unemi.edu.ec/s/AKfycbyQklycminX1_xniwj3eWTSFVa-te-cx3hcebvhejvyKx7wc709X_BdTMT1vB_KS0rHFw/exec';
 const previousGrade = window.grade;
+let currentSubmissionId = null;
+function uniqueSubmissionId() {
+  if (!currentSubmissionId) {
+    currentSubmissionId = (typeof crypto !== 'undefined' && crypto.randomUUID)
+      ? crypto.randomUUID()
+      : String(Date.now()) + '-' + Math.random().toString(36).slice(2);
+  }
+  return currentSubmissionId;
+}
+const previousResetQuiz = window.resetQuiz;
+window.resetQuiz = function() {
+  previousResetQuiz();
+  currentSubmissionId = null;
+  const submit = document.getElementById('submit');
+  submit.disabled = false;
+  document.getElementById('submissionStatus').textContent = 'Complete the three questions, enter your details, and check the consent box before submitting.';
+};
 window.grade = function() {
- const name = (document.getElementById('student').value || '').trim();
- const email = (document.getElementById('studentEmail').value || '').trim().toLowerCase();
- const consent = document.getElementById('studentConsent').checked;
- const status = document.getElementById('submissionStatus');
- if (name.length < 5 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { status.textContent='Please enter your full name and a valid institutional email address.'; return; }
- if (!consent) { status.textContent='Please confirm the class evidence notice before submitting.'; return; }
- if (items.some((_,i)=>!document.querySelector('input[name=q'+i+']:checked'))) { previousGrade(); return; }
- previousGrade();
- const selected = items.map((_,i)=>Number(document.querySelector('input[name=q'+i+']:checked').value));
- if (!SHEET_WEB_APP_URL) { status.textContent='Your result is shown above. Automatic Google Sheets recording is pending teacher setup; print or save your result as PDF for now.'; return; }
- document.getElementById('submit').disabled=true;
- const payload = new URLSearchParams({
-   name, email,
-   submissionId:(typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : String(Date.now())+'-'+Math.random().toString(36).slice(2)),
-   m1:document.querySelector('input[name=m1]:checked')?.value || '',
-   m1text:document.querySelector('#one textarea')?.value || '',
-   m2:document.querySelector('input[name=m2]:checked')?.value || '',
-   m2text:document.querySelector('#two textarea')?.value || '',
-   q1:String(selected[0]),q2:String(selected[1]),q3:String(selected[2])
- });
- status.textContent='Sending your submission...';
- fetch(SHEET_WEB_APP_URL,{method:'POST',mode:'no-cors',body:payload})
- .then(()=>{status.textContent='Submission request sent. Because Google does not return a readable confirmation, only the teacher can verify that the record appears in Google Sheets.';})
- .catch(()=>{status.textContent='Unable to send automatically. Save the result as PDF and inform your teacher.';document.getElementById('submit').disabled=false;});
+  const status = document.getElementById('submissionStatus');
+  const name = (document.getElementById('student').value || '').trim();
+  const email = (document.getElementById('studentEmail').value || '').trim().toLowerCase();
+  const consent = document.getElementById('studentConsent').checked;
+  if (name.length < 5 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    status.textContent = 'Enter your full name and a valid email address before submitting.';
+    return;
+  }
+  if (!consent) {
+    status.textContent = 'Please tick the consent checkbox before submitting.';
+    return;
+  }
+  if (items.some((_, i) => !document.querySelector('input[name="q' + i + '"]:checked'))) {
+    previousGrade();
+    status.textContent = 'Please answer all three questions.';
+    return;
+  }
+  const selected = items.map((_, i) => Number(document.querySelector('input[name="q' + i + '"]:checked').value));
+  previousGrade();
+  if (!SHEET_WEB_APP_URL) {
+    status.textContent = 'Your score is shown above, but submission has not been configured.';
+    return;
+  }
+
+  const values = {
+    name, email,
+    submissionId: uniqueSubmissionId(),
+    m1: document.querySelector('input[name="m1"]:checked')?.value || '',
+    m1text: document.querySelector('#one textarea')?.value || '',
+    m2: document.querySelector('input[name="m2"]:checked')?.value || '',
+    m2text: document.querySelector('#two textarea')?.value || '',
+    q1: String(selected[0]), q2: String(selected[1]), q3: String(selected[2])
+  };
+  const form = document.createElement('form');
+  form.method = 'POST';
+  form.action = SHEET_WEB_APP_URL;
+  form.target = '_blank';
+  form.acceptCharset = 'UTF-8';
+  form.style.display = 'none';
+  Object.entries(values).forEach(([key, val]) => {
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = key;
+    input.value = val;
+    form.appendChild(input);
+  });
+  document.body.appendChild(form);
+  status.textContent = 'Submission opened in a new tab. Look for the exact result OK. If you see INVALID, ERROR, or a login page, inform your teacher. Your answer is not confirmed until you see OK and the teacher verifies the sheet.';
+  form.submit();
+  form.remove();
+  document.getElementById('submit').disabled = true;
 };
 </script></body></html>
